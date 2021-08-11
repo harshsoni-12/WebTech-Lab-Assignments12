@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"  />
+    <link rel="stylesheet" href="Assignment-4-5-6.css">
+    <title>Inline, Internal and External CSS</title>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;  margin: 0;
+        }
+        #title1 {
+            display: flex;   margin-top: 3%;  justify-content: center;  font-size: medium;  color: cyan;
+        }
+        p { 
+            margin: 10px; 
+        }
+        .internal-css { 
+            color: rgb(180, 101, 255); 
+            font-size: 25px;
+        }
+        .internal-css>span { 
+            color: rgb(224, 236, 44); 
+            font-weight: bolder; 
+        }
+    </style>
+  </head>
+  <body style="background: linear-gradient(to right, #040404, #000000, #656565)" >
+    <div id="title1"><h1>Inline, Internal and External CSS</h1> </div>
+    <div style="display: flex; justify-content: center; margin-top: 30px">
+        <section> 
+            <p style="color:pink; font-size:25px">
+                This line is formatted using 
+                <span style="color:red; font-weight: bold;">
+                    Inline CSS.
+                </span>
+            </p> 
+            <p class="internal-css">
+                This line is formatted using 
+                <span>Internal CSS.</span>
+            </p> 
+            <p class="external-css">
+                This line is formatted using 
+                <span>External CSS.</span>
+            </p> 
+        </section>      
+    </div>
+  </body>
+</html>

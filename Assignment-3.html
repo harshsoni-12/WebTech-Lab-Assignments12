@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"  />
+    <title>Lists Usage</title>
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;  margin: 0;
+      }
+      #title1 {
+        display: flex;   margin-top: 3%;  justify-content: center;  font-size: medium;  color: cyan;
+      }
+      .list {
+        display: inline-block;  justify-content: center;  border: 3px groove cyan; margin: 20px;
+        padding: 20px;
+      }
+      .list h3 {
+        font-size: large; color: magenta;  margin-bottom: 20px;
+      }
+      li, dt {
+        color: white;  margin-bottom: 10px;
+      }
+      dd {
+        margin-left: 15px;   margin-bottom: 15px;   color: cyan;
+      }
+    </style>
+  </head>
+  <body style="background: linear-gradient(to right, #040404, #000000, #656565)" >
+    <div id="title1"><h1>List Usage</h1> </div>
+    <div style="display: flex; justify-content: center; margin-top: 30px">
+      <section>
+        <div class="list"> <h3>This is an unordered list</h3>
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </div>
+        <div class="list"> <h3>This is an ordered list</h3>
+          <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+          </ol>
+        </div>
+        <div class="list"> <h3>This is definition list</h3>
+          <dl>
+            <dt>January</dt>
+            <dd>It is the first month of the year.</dd>
+            <dt>February</dt>
+            <dd>It is the second month of the year.</dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.external-css {
+  color: rgb(255, 58, 206);
+  font-size: 25px;
+}
+.external-css > span {
+  color: rgb(24, 241, 24);
+  font-weight: bolder;
+}
